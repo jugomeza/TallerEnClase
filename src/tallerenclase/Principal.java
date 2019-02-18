@@ -48,7 +48,7 @@ public class Principal {
                     a = leer.nextInt();
                     switch (a) {
                         case 1:
-                            System.out.println("Ahora ingrese el numero de creacion universidad, el nombre de la sede,\n la direccion de la sede separado por slash, el telefono de la sede,\n el area de Construccion de la sede");
+                            System.out.println("Ahora ingrese el numero de universidad, el nombre de la sede,\n la direccion de la sede separado por slash, el telefono de la sede,\n el area de Construccion de la sede");
                             b = leer.nextInt();
                             String nombreS = leer.next();
                             String direccionS = leer.next();
@@ -57,7 +57,7 @@ public class Principal {
                             universidades.get(b - 1).RegistrarSedeT(nombreS, direccionS, telefonoS, areaC);
                             break;
                         case 2:
-                            System.out.println("Ahora ingrese el numero de creacion universidad, el nombre de la sede,\n la direccion de la sede separado por slash, el telefono de la sede,\n el area de Construccion de la sede y el numero de programas de alta calidad");
+                            System.out.println("Ahora ingrese el numero de niversidad, el nombre de la sede,\n la direccion de la sede separado por slash, el telefono de la sede,\n el area de Construccion de la sede y el numero de programas de alta calidad");
                             b = leer.nextInt();
                             String nombreS2 = leer.next();
                             String direccionS2 = leer.next();
@@ -68,7 +68,7 @@ public class Principal {
                             break;
 
                         case 3:
-                            System.out.println("Ahora ingrese el numero de creacion universidad,\n el nombre de la sede, la direccion de la sede separado por slash,\n el telefono de la sede, el area de Construccion de la sede\n y el mejor curso que ofrece la sede");
+                            System.out.println("Ahora ingrese el numero  universidad,\n el nombre de la sede, la direccion de la sede separado por slash,\n el telefono de la sede, el area de Construccion de la sede\n y el mejor curso que ofrece la sede");
                             b = leer.nextInt();
                             String nombreS3 = leer.next();
                             String direccionS3 = leer.next();
@@ -80,19 +80,19 @@ public class Principal {
                     }
                     break;
                 case 3:
-                    System.out.println("ingrese el numero de creacion universidad y el numero de creacion de sede,\n recuerde que al eliminar una sede los demas numeros de creacion se ajustan");
+                    System.out.println("ingrese el numero de universidad y el numero de sede,\n recuerde que al eliminar una sede los demas numeros de creacion se ajustan");
                     a = leer.nextInt();
                     b = leer.nextInt();
                     universidades.get(a - 1).EliminarSede(b - 1);
                     break;
                 case 4:
-                    System.out.println("ingrese el numero de creacion de la univerrsidad\n y posteriormene el numero de la sede que quiere consultar");
+                    System.out.println("ingrese el numero de univerrsidad\n y posteriormene el numero de la sede que quiere consultar");
                     a = leer.nextInt();
                     b = leer.nextInt();
                     universidades.get(a - 1).ConsultarSede(b - 1);
                     break;
                 case 5:
-                    System.out.println("ingrese el numero de creacion de universidad, numero de creacion de sede,\n area, telefono, nombre y direccion separada por slash");
+                    System.out.println("ingrese el numero de universidad, numero de sede,\n area, telefono, nombre y direccion separada por slash");
                     a = leer.nextInt();
                     b = leer.nextInt();
                     double area = leer.nextDouble();
@@ -102,7 +102,7 @@ public class Principal {
                     universidades.get(a - 1).ModificarSede(b - 1, area, tel, nombre4, direccion);
                     break;
                 case 6:
-                    System.out.println("ingrese el numero de creacion de la universidad, el numero de creaacion de la sede,\n el tipo , el nombre  y la descripcion ");
+                    System.out.println("ingrese el numero de  universidad, el numero de creaacion de la sede,\n el tipo , el nombre  y la descripcion ");
                     a = leer.nextInt();
                     b = leer.nextInt();
                     String tipo = leer.next();
