@@ -42,6 +42,7 @@ public class Principal {
                     System.out.println("ingrese nombre de la universidad");
                     String nombre = leer.next();
                     universidades.add(new Universidad(nombre));
+                    System.out.println("se creo la universidad satisfactoriamente");
                     break;
                 case 2:
                     System.out.println("ingrese la opcion del tipo de sede\n1)Tecnologica.\n2)Profesional.\n3)Educacion Continua.");
@@ -55,6 +56,7 @@ public class Principal {
                             int telefonoS = leer.nextInt();
                             double areaC = leer.nextDouble();
                             universidades.get(b - 1).RegistrarSedeT(nombreS, direccionS, telefonoS, areaC);
+                            System.out.println("tegistro exitoso");
                             break;
                         case 2:
                             System.out.println("Ahora ingrese el numero de niversidad, el nombre de la sede,\n la direccion de la sede separado por slash, el telefono de la sede,\n el area de Construccion de la sede y el numero de programas de alta calidad");
@@ -65,6 +67,7 @@ public class Principal {
                             double areaC2 = leer.nextDouble();
                             int programasA = leer.nextInt();
                             universidades.get(b - 1).RegistrarSedeP(nombreS2, direccionS2, telefonoS2, areaC2, programasA);
+                            System.out.println("tegistro exitoso");
                             break;
 
                         case 3:
@@ -76,7 +79,9 @@ public class Principal {
                             double areaC3 = leer.nextDouble();
                             String cursoM = leer.next();
                             universidades.get(b - 1).RegistrarSedeE(nombreS3, direccionS3, telefonoS3, areaC3, cursoM);
+                            System.out.println("tegistro exitoso");
                             break;
+
                     }
                     break;
                 case 3:
@@ -111,12 +116,13 @@ public class Principal {
                     universidades.get(a - 1).listaSedes.get(b - 1).añadirProgramaFormacion(tipo, nom, descripcion);
                     break;
                 case 7:
-                    System.out.println("ingrese el nombre del nuevo estudiante, el apellido del nuevo esdudiante,\n Colegio donde se graduo y el año en que se graduo y ");
+                    System.out.println("ingrese el nombre del nuevo estudiante, el apellido del nuevo esdudiante,\n Colegio donde se graduo y el año en que se graduo ");
                     String nombreE = leer.next();
                     String apellidoE = leer.next();
                     String colegioE = leer.next();
                     int añoE = leer.nextInt();
                     listaE.add(new EstudianteBachiller(nombreE, apellidoE, colegioE, añoE));
+                    System.out.println("definicion exitosa");
                     break;
                 case 8:
                     System.out.println("ingrese el numero de universidad, numero de sede, numero de programa");
