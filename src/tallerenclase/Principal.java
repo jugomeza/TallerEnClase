@@ -29,7 +29,7 @@ public class Principal {
         Scanner leer = new Scanner(System.in);
 
         while (i >= 0) {
-            while (i > 8) {
+            while (i > 8||i==0) {
                 System.out.println("no es una opcion valida");
                 System.out.println("Desea:\n1)Crear una universidad.\n2)Registrar una sede.\n3)Eliminar una sede.\n4)Consultar sede.\n5)Modificar una sede.\n6)Añadir un Programa de formacion.\n7)Definir un estudiante.\n8)Matricular un estudiante.");
                 i = leer.nextInt();
@@ -40,7 +40,6 @@ public class Principal {
             switch (i) {
                 case 1:
                     System.out.println("ingrese nombre de la universidad");
-                    System.out.println("hola mundo");
                     String nombre = leer.next();
                     universidades.add(new Universidad(nombre));
                     break;
@@ -50,6 +49,7 @@ public class Principal {
                     switch (a) {
                         case 1:
                             System.out.println("Ahora ingrese el numero de creacion universidad, el nombre de la sede, la direccion de la sede, el telefono de la sede, el area de Construccion de la cede");
+                            b = leer.nextInt();
                             String nombreS = leer.next();
                             String direccionS = leer.next();
                             int telefonoS = leer.nextInt();
@@ -58,6 +58,7 @@ public class Principal {
                             break;
                         case 2:
                             System.out.println("Ahora ingrese el numero de creacion universidad, el nombre de la sede, la direccion de la sede, el telefono de la sede, el area de Construccion de la cede y el numero de programas de alta calidad");
+                            b = leer.nextInt();
                             String nombreS2 = leer.next();
                             String direccionS2 = leer.next();
                             int telefonoS2 = leer.nextInt();
@@ -68,6 +69,7 @@ public class Principal {
 
                         case 3:
                             System.out.println("Ahora ingrese el numero de creacion universidad, el nombre de la sede, la direccion de la sede, el telefono de la sede, el area de Construccion de la cede y el mejor curso que ofrece la sede");
+                            b = leer.nextInt();
                             String nombreS3 = leer.next();
                             String direccionS3 = leer.next();
                             int telefonoS3 = leer.nextInt();
