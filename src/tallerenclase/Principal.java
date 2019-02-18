@@ -102,7 +102,7 @@ public class Principal {
                     universidades.get(a - 1).ModificarSede(b - 1, area, tel, nombre4, direccion);
                     break;
                 case 6:
-                    System.out.println("ingrese el numero de  universidad, el numero de creaacion de la sede,\n el tipo , el nombre  y la descripcion ");
+                    System.out.println("ingrese el numero de  universidad, el numero de creaacion de la sede,\n el tipo , el nombre  y la descripcion separado con rayas al piso o slash ");
                     a = leer.nextInt();
                     b = leer.nextInt();
                     String tipo = leer.next();
