@@ -56,7 +56,7 @@ public class Universidad {
     }
 
     public void darInformacion() {
-        for (int i = 0; i <= listaSedes.size(); i++) {
+        for (int i = 0; i < listaSedes.size(); i++) {
             listaSedes.get(i).mostrarInfo();
         }
     }
