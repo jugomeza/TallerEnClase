@@ -12,10 +12,11 @@ import java.util.ArrayList;
  * @author sebas
  */
 public class ProgramaFormacion {
+
     public String tipo;
     public String nombre;
     public String descripcion;
-    ArrayList <EstudianteBachiller> listaEstudiantes = new ArrayList<>();
+    ArrayList<EstudianteBachiller> listaEstudiantes = new ArrayList<>();
 
     public ProgramaFormacion() {
     }
@@ -25,11 +26,13 @@ public class ProgramaFormacion {
         this.nombre = nombre;
         this.descripcion = descripcion;
     }
-    public void vincularEstudiante(EstudianteBachiller e){
-    listaEstudiantes.add(e);
+
+    public void vincularEstudiante(EstudianteBachiller e) {
+        listaEstudiantes.add(e);
     }
-    public void mostrarDatos(){
-        System.out.println("Tipo: "+tipo+"\n Nombre: "+nombre+"\n Descripcion: "+descripcion);
+
+    public void mostrarDatos() {
+        System.out.println("Tipo: " + tipo + "\n Nombre: " + nombre + "\n Descripcion: " + descripcion);
     }
-    
+
 }
